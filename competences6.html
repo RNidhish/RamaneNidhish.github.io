@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Content</title>
+    <style>
+        /* Add your CSS styles here */
+
+        :root {
+
+/**
+ * colors
+ */
+
+/* gradient */
+
+--bg-gradient-onyx: linear-gradient(
+  to bottom right, 
+  hsl(240, 1%, 25%) 3%, 
+  hsl(0, 0%, 19%) 97%
+);
+--bg-gradient-jet: linear-gradient(
+  to bottom right, 
+  hsla(240, 1%, 18%, 0.251) 0%, 
+  hsla(240, 2%, 11%, 0) 100%
+), hsl(240, 2%, 13%);
+--bg-gradient-yellow-1: linear-gradient(
+  to bottom right, 
+  hsl(45, 100%, 71%) 0%, 
+  hsla(36, 100%, 69%, 0) 50%
+);
+--bg-gradient-yellow-2: linear-gradient(
+  135deg, 
+  hsla(45, 100%, 71%, 0.251) 0%, 
+  hsla(35, 100%, 68%, 0) 59.86%
+), hsl(240, 2%, 13%);
+--border-gradient-onyx: linear-gradient(
+  to bottom right, 
+  hsl(0, 0%, 25%) 0%, 
+  hsla(0, 0%, 25%, 0) 50%
+);
+--text-gradient-yellow: linear-gradient(
+  to right, 
+  hsl(45, 100%, 72%), 
+  hsl(35, 100%, 68%)
+);
+
+/* solid */
+
+--jet: hsl(0, 0%, 22%);
+--onyx: hsl(240, 1%, 17%);
+--eerie-black-1: hsl(240, 2%, 13%);
+--eerie-black-2: hsl(240, 2%, 12%);
+--smoky-black: hsl(0, 0%, 7%);
+--white-1: hsl(0, 0%, 100%);
+--white-2: hsl(0, 0%, 98%);
+--orange-yellow-crayola: hsl(45, 100%, 72%);
+--vegas-gold: hsl(45, 54%, 58%);
+--light-gray: hsl(0, 0%, 84%);
+--light-gray-70: hsla(0, 0%, 84%, 0.7);
+--bittersweet-shimmer: hsl(0, 43%, 51%);
+
+/**
+ * typography
+ */
+
+/* font-family */
+--ff-poppins: 'Poppins', sans-serif;
+
+/* font-size */
+--fs-1: 24px;
+--fs-2: 18px;
+--fs-3: 17px;
+--fs-4: 16px;
+--fs-5: 15px;
+--fs-6: 14px;
+--fs-7: 13px;
+--fs-8: 11px;
+
+/* font-weight */
+--fw-300: 300;
+--fw-400: 400;
+--fw-500: 500;
+--fw-600: 600;
+
+/**
+ * shadow
+ */
+
+--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+--shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+--shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+--shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+--shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+
+/**
+ * transition
+ */
+
+--transition-1: 0.25s ease;
+--transition-2: 0.5s ease-in-out;
+
+}
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        html { font-family: var(--ff-poppins); }
+
+        .modal-content {
+            background: var(--eerie-black-2);
+            border: 3px solid var(--orange-yellow-crayola);
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+
+        h2 {
+             text-align: center;
+             color: var(--white-2);
+            text-transform: capitalize;
+             font-size: var(--fs-1);
+        }
+
+        p {
+            color: var(--white-1);
+            margin-bottom: 20px;
+        }
+
+        .titre {
+            color: var(--orange-yellow-crayola);
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .centered-image {
+            width: 50%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="modal-content">
+        <h2>Rapport RSE sur Crédit Agricole</h2>
+        <p>
+            <strong class="titre">Description du Projet :</strong><br>
+            <br>
+            Notre objectif principal était de comprendre comment Aifrance s'engageait en matière de durabilité et de responsabilité sociale, en examinant ses politiques, ses actions concrètes et leur impact sur la société et l'environnement.
+        </p>
+        <p>
+            <strong class="titre">Étapes de Réalisation :</strong><br>
+            <br>
+            1. Choix de l'Entreprise.<br>
+            2. Collecte de Données.<br>
+            3. Analyse des Pratiques.<br>
+            4. Rédaction du Rapport.<br>
+        </p>
+        <p>
+            <strong class="titre">Soutenance Orale :</strong><br>
+            <br>
+            Nous avons présenté notre rapport lors d'une soutenance orale, mettant en évidence les principales conclusions et recommandations découlant de notre analyse. Cette présentation nous a permis d'expliquer nos méthodes de recherche, nos résultats et nos conclusions aux évaluateurs et aux autres membres du groupe.
+        </p>
+        <p>
+            <strong class="titre">Résultats et Apports :</strong><br>
+            <br>
+            Ce projet nous a offert une expérience concrète dans l'analyse des pratiques de RSE d'une entreprise, ainsi que dans la communication de nos résultats de manière claire et persuasive lors de la soutenance orale.<br><br>
+            Il nous a également sensibilisés aux enjeux de durabilité et de responsabilité sociale dans le monde des affaires, renforçant ainsi notre compréhension des défis et des opportunités associés à la RSE.
+        </p>
+        <div class="image-container">
+            <img src="./assets/images/com6.png" alt="Image du projet de Rapport RSE sur Aifrance" class="centered-image">
+        </div>
+    </div>
+    
+    <div class="modal-content">
+        <h2>Team Building</h2>
+        <p>
+            <strong class="titre">Objectif du projet :</strong><br>
+            <br>
+            Création et organisation d'un évènement de Team Building fictif pour une entreprise afin de renforcer la cohésion d'équipe. Ce projet a été réalisé en groupe de 3. Ce projet nous permet de valider les apprentissages critiques suivants :
+        </p>
+        <p>
+            <strong class="titre">Apprentissages critiques :</strong><br>
+            <br>
+            1. Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire<br>
+            2. Acquérir les compétences interpersonnelles pour travailler en équipe<br>
+        </p>
+        <div class="image-container">
+            <img src="./assets/images/Comp-6.png" alt="Image du projet" class="centered-image">
+        </div>
+    </div>
+    
+</body>
+
+</html>
